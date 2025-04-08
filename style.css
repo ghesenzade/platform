@@ -4,65 +4,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
-.page{
+body{
     font-family: "Overpass", "Ubuntu", sans-serif;
 }
-.navbar a{
-text-decoration: none;
-color: #fff;
+.container{
+    width: 85%;
+    margin: 0 auto;
 }
-.navbar {
-    margin: 10px;
+.column{
     display: flex;
-    gap: 30px;
+    flex-direction: column;
 }
-.logo {
-    margin-left: 70px;
+.row{
+    display: flex;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
 }
 .header {
     background-color: orange;
-    height: 300px;
-    border-radius: 0px 0px 0px 60px;
+    height: 50px;
 }
-.container {
-    padding: 20px;
-}
-.header-top { 
+
+.header-content { 
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
-.header-text {
+
+.navbar {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* first section */
+.hero{
+    padding: 50px;
+    background-color: orange;
+    border-radius: 0px 0px 0px 60px;
+}
+
+.hero-text {
     margin: 5px;
     color: #fff;
 }
-.header-bottom{
+
+.hero-main {
+    margin-top: -1px;
     display: flex;
-    gap: 30px;
-    align-items: end;
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.but {
-    margin-top: -40px;
-    margin-bottom: 10px;
+.hero-main p{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btn {
     border: 1px solid orange;
     background-color: orange;
     padding: 10px;
     border-radius: 30px;
     color: #fff;
+    transition: 0.5s all ease;
 }
-.but:hover{
-border: 1px solid orange;
-background-color: #fff;
-color: orange;
-}
-
-.header-main {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.btn:hover{
+    border: 1px solid orange;
+    background-color: #fff;
+    color: orange;
 }
 .buttom {
     border: 1px solid orange;
@@ -72,68 +92,79 @@ color: orange;
     margin: 10px;
     margin-top: 5px;
     border-radius: 30px;
+    transition: 0.5s all ease;
 }
 .buttom:hover{
     border: 1px solid orange;
     background-color: #fff;
     color: orange;
 }
-.main-one {
+
+/*second section */
+.future {
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    margin-top: 120px;
+    padding: 100px 0;
 }
 .main-text-one {
+    text-align: center;
+}
+.content{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: -200px;
+    justify-content: space-between;
+}
+.img {
+    width: 50%;
+    height: 50%;
 }
 .first-photo {
-    width: 400px;
-   margin-left:800px;
-   margin-bottom: -450px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texts{
+    width: 50%;
+    height: 100%;
+    padding: 50px 0;
 }
 .intro {
-    padding: 20px;
-    margin-top: 40px;
-    margin-left: -20px;
+    padding-bottom: 20px;
 }
 .robust {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    padding: 40px 0 20px;
 }
-.main-two{
+
+/* third section */
+.infrastructure{
     background-color: hsl(208, 49%, 24%);
-    padding: 50px;
+    padding: 50px 0;
     border-radius: 0px 70px 0px 70px;
-    margin-top: 100px;
     color: #fff;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+    height: 50vh;
 }
-.phones {
-    width: 350px;
-    margin-top: -100px;
-    margin-left: 100px;
+.infr-img{
+    width: 30%;
+}
+.phones{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .main-two-texts{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-left: 700px;
-    margin-top: -250px;
+    width: 70%;
+}
+p{
+    width: 50%;
 }
 .main-third{
     display: flex;
     flex-direction:row;
-    margin-top: 150px;
-    margin-left: 150px;
-    gap: 250px;
-    margin-bottom: 100px;
 }
 .second-photo{
     width: 350px;
